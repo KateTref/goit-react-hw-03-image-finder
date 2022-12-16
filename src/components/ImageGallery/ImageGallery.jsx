@@ -5,9 +5,7 @@ const ImageGallery = ({ images, onClick }) => {
   return (
     <ul className={css.list}>
       {images.map(image => {
-        return (
-          <ImageGalleryItem key={image.id} image={image} onModal={onClick} />
-        );
+        return <ImageGalleryItem key={image.id} image={image} />;
       })}
     </ul>
   );

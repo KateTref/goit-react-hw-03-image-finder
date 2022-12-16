@@ -55,7 +55,6 @@ class App extends Component {
           )}
           <ImageGallery
             images={images}
-            onClick={this.toggleModal}
           ></ImageGallery>
           {error && <p>{error}</p>}
           {images.length > 0 && page < totalPages && (
